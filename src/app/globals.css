@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@tailwind base;
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: black
+}
+@tailwind components;
+.anta-regular{
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.abcd{
+  display: inline;
+  /* border: 1px solid white; */
+  color: #02AAF1
+}
+.curs{
+  cursor: pointer;
+  color: #01608B
+}
+.out:hover .ins{
+  color: black !important;
+  /* display: block */
+
+}
+.shayd
+{
+  box-shadow: #02AAF1 0px 1px 2px 0px, #02AAF1 0px 2px 6px 2px;
+}
+
+/* Cards Styling */
+.main{
+  width: 20%;
+  height: 30vh;
+  border: 1px solid black;
+margin: auto;
+margin-top: 30px;
+overflow: hidden;
+position: relative;
+}
+.main  .desc{
+  /* position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  color: red;
+position: absolute;
+bottom: 0;
+background: linear-gradient(to top,#02AAF1,transparent);
+/* height: 20vh; */
+/* visibility: hidden; */
+
+/* border: 1px solid red; */
+/* margin-top: 34px; */
+/* line-height: 20vh; */
+/* vertical-align: bottom; */
+/* transition: height 2s  ; */
+/* transform-origin: bottom; */
+/* content: ''; */
+  /* position: absolute;
+  bottom: -5px;
+  left: 0; */
+  width: 100%;
+  height: 18.2%;
+  scale: 1;
+  /* background-color: green; */
+  transform-origin: bottom;
+  transition: height 0.5s ;
+  z-index: 2;
+}
+.text-shadow{
+  text-shadow: 2px 2px black;
+}
+.main:hover .desc  {
+/* visibility: visible; */
+scale: 1;
+height: 90%;
+/* transition-duration: 3s; */
+
+}
+/* .main:hover img{
+scale: 2;
+} */
+.dove{
+background-image: url('/pic3.jpeg');
+height: 100%;
+/* width: 100%; */
+/* background-color: red; */
+background-size: cover;
+background-position: center;
+z-index: -1;
+transition: .5s;
+}
+.main:hover .dove{
+scale: 1.1;
+
+}
+/* .main:not(:hover) .dove{
+scale: 0;
+
+} */
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+.active{
+  color: #02AAF1 !important;
+}
+
